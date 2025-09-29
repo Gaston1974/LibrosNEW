@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Causas</title>
+</head>
+
+<body class="bg-slate-300 font-montagu">
+    <div class="content">
+        <nav class="bar bar-tab">
+            <a class="tab-item active" href="./index">
+    
+              <span class="icon icon-home"></span>
+              <span class="tab-label">Home</span>
+            </a>
+    
+   
+        </nav>  
+
+    <main>
+    <script src="./js/main.js"></script> 
+        <div class="flex flex-col bg-sky-600 text-white items-center py-8 shadow-[0_10px_25px_2px_rgba(30,41,59,0.7)]">
+            <h1 class="text-2xl"></h1>
+            <img src="./img/flag.png" alt="Flag" class="w-40">
+            <p align="center" class="text-xl">S I S T E M A - C A U S A S</p>
+        </div>
+        <div class="mx-test2 ">
+
+            <div  class="flex flex-col mt-8 items-center">
+                <h1 class="mb-8 text-3xl text-center"><span class="underline">Archivo de causas</span>:</h1>
+                <!-- <div 
+                    class="p-8 bg-sky-200 flex flex-col items-center text-slate-800 rounded-lg shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] text-xl w-fit mb-8">
+                    <h1 class="text-lg font-black">IPC= <span class="text-naranja-600 text-lg" id="IPC" > </span>%</h1>
+                    <p>el ganador es :</p>
+                    <h2  class="text-lg font-black"> <span id="Nombre"> </span></h2>
+                    
+                </div>
+    -->
+        
+                <div id="results" 
+                    class="mx-test2 flex flex-col bg-slate-700 DivWithScroll  text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] w-full">
+
+
+		<script type="text/javascript">
+
+     
+			var text = "<table>"+
+                        "<thead>"+
+                            "<tr>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;numero de causa       &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;caratula              &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;&nbsp;&nbsp;juzgado   &nbsp;&nbsp;&nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;&nbsp;&nbsp;fiscalia  &nbsp;&nbsp;&nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;magistrado            &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;preventor             &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;preventor auxiliar    &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;provincia_id          &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;localidad_id          &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;domicilio             &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;nro_sgo               &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;nro_mto               &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;tipo_delito           &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;nombre fantasia       &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;providencia           &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;estado                &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;ip address            &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;nombre archivo        &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;ruta archivo          &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;tipo archivo          &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;peso archivo          &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;subido por            &nbsp;&nbsp;<p></span></th>"+
+                                "<th class=\" text-sm text-center\"><span style=\"white-space: pre\"><p>&nbsp;&nbsp;contenido nota        &nbsp;&nbsp;<p></span></th>"+
+                            "</tr>"+
+                        "</thead>"
+			
+         
+			      const aux = getCookie("resultado") 
+                  const datas = JSON.parse(aux)
+                                                        
+				
+                    for (let i = 0; i < datas.length; i++) {
+                         	                 			                                                                                                                                                           
+			text += "<tbody>"+
+                            "<tr>"+ 
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Nro_causa +           "&nbsp;&nbsp;<p></td>"+
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Caratula +            "&nbsp;&nbsp;<p></td>"+
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Juzgado +             "&nbsp;&nbsp;<p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Fiscalia +            "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Magistrado +          "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Preventor +           "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Preventor_auxiliar +  "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Provincia_id +        "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Localidad_id +        "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Domicilio +           "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Nro_sgo +             "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Nro_mto +             "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Tipo_delito +         "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Nombre_fantasia +     "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Providencia +         "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Estado +              "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].IpAdress +            "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Nombre_archivo +      "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Ruta_archivo +        "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Tipo_documento +      "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Tamano +              "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].UsuarioId +           "&nbsp;&nbsp;</p></td>" +
+                                "<td class=\"text-sm text-center text-slate-900\"><p>&nbsp;&nbsp;" + datas[i].Nota_causas +         "&nbsp;&nbsp;</p></td>" +
+                            "</tr>"
+				
+                           
+				};
+
+			text += "</tbody>" +
+				"</table>"
+
+			document.write(text)
+           
+
+		</script>
+                </div>
+
+
+        </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

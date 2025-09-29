@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./ratchet-2.0.2/dist/css/ratchet.css">
+    <link rel="stylesheet" href="./ratchet-2.0.2/dist/css/ratchet-theme-ios.css">
+    <script src="./ratchet-2.0.2/dist/js/ratchet.js"></script> 
+
+    <title>Causas</title>
+</head>
+
+<body class="bg-slate-300 font-montagu text-sm-color">
+
+    <div class="content">
+        <nav class="bar bar-tab">
+            <a class="tab-item active" href="./index">
+    
+              <span class="icon icon-home"></span>
+              <span class="tab-label">Home</span>
+            </a>
+    
+   
+        </nav>  
+
+    <main>
+        <script src="./js/main.js"></script> 
+      
+
+        <div class="flex flex-col bg-interislenia text-white items-center py-8 shadow-[0_10px_25px_2px_rgba(30,41,59,0.7)]">
+   
+            <img src="./img/flag.png" alt="Flag" class="w-40">
+            <p align="center" class="text-white">S I S T E M A - C A U S A S </p>
+        </div>
+        <div class="container mx-auto mt-5">   
+            <div class="flex flex-col items-end mb-8">
+       <!--
+                <h4><span class="underline font-black">Fecha</span>: <span class="mx-test text-rojo-600" id="expired-date"></span></h4>
+        -->
+            </div>
+
+            <div
+                class="p-8 bg-interislenia flex flex-col md:flex-row items-left text-slate-800 rounded-lg shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit text-xl">
+                <div class="md:flex-col md:basis-2/3  text-lg">
+                    <h4 class="me-2 md:me-0 text-sm text-white"><span class="underline font-black">Usuario</span>:</h4>
+                    <h2 id="username">Nombre Apellido</h2>
+                </div>
+     
+                <div class=" md:basis-2/3 text-lg">  
+                    <h1 class="me-2 md:me-0 text-sm text-white"> <span class="underline font-black">Fecha:</span></h1> 
+                    <h2 id="actual-prediction-date"> </h2>
+                </div>
+            </div>
+          
+            <div class="flex flex-col md:flex-row md:justify-around mt-8">
+                <div class="flex flex-col text-slate-800 items-center">
+                    <form action="submit" id="consultas" 
+                        class="max-w-mar bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit">
+                        <h1 class="mb-2 text-sm-color text-naranja-600 mx-test8"><span class="underline">Consultar causas</span>:</h1>
+                        <div> <!--mb-6-->
+                            <label class="text-slate-400 h-fit font-bold mx-test3 mb-3" for="inline-prediction">
+                             Ingrese numero de causa o deje vacio para consultar todas las causas .     
+                            </label>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:justify-around mx-test6">
+                            <p> &nbsp;</p>
+                         <input                  
+                                id="fechaConsulta" type="text" style="color: black;" name="Nro_causa" > 
+                                <p> &nbsp;&nbsp;&nbsp;</p>
+                                <button
+                                    class="hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                                    type="submit">Consultar</button>
+                                <br><br> 
+                        </div>
+                    </form>
+
+
+
+
+<!-- TABLA -->
+
+                         <!-- <div id="asignaciones" 
+                        class="mx-test2 flex flex-col bg-slate-700 DivWithScroll text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] w-full">
+     -->
+
+                            
+
+                   
+           
+
+             
+<!--             
+                    </div>  -->
+
+
+                        <!-- <div class="flex flex-row  h-fit text-slate-800" id="prediction-input">
+                            <label class="text-slate-400 h-fit font-bold mx-test5 mb-3" for="inline-prediction">
+                                interisleña I
+                                
+                            </label>                         
+                            
+                            <p> &nbsp;&nbsp;&nbsp; </p>
+
+                            <select name="patrones" id="patron-select">
+                                <option value="">Elegir una opcion</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="parrot">Parrot</option>
+                                <option value="spider">Spider</option>
+                                <option value="goldfish">Goldfish</option>
+                              </select>
+ 
+                              <p> &nbsp;&nbsp;&nbsp; </p>
+                                          
+
+                              <select name="marineros" id="marinero-select">
+                                <option value="">Elegir una opcion</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="parrot">Parrot</option>
+                                <option value="spider">Spider</option>
+                                <option value="goldfish">Goldfish</option>
+                              </select>
+
+                            
+                            <input                  
+                                id="inline-prediction" type="text" name="Opcion1"> 
+                                <p align="center"> &nbsp;&nbsp; % </p><br><br> 
+                                
+                            -->
+
+                        <!-- </div>                                                      
+
+                        <div class="flex flex-row  h-fit text-slate-800" id="prediction-input">
+                            
+                            <label class="text-slate-400 h-fit font-bold mx-test5 mb-3" for="inline-prediction">
+                                interisleña II
+                                
+                            </label>   
+
+                            <select name="patrones" id="patron-select">
+                                <option value="">Elegir una opcion</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="parrot">Parrot</option>
+                                <option value="spider">Spider</option>
+                                <option value="goldfish">Goldfish</option>
+                              </select>
+ 
+                              <p> &nbsp;&nbsp;&nbsp; </p>
+                                          
+
+                              <select name="marineros" id="marinero-select">
+                                <option value="">Elegir una opcion</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="parrot">Parrot</option>
+                                <option value="spider">Spider</option>
+                                <option value="goldfish">Goldfish</option>
+                              </select>
+
+                        </div>   
+
+                        <div class="flex justify-left">
+                            
+                            <button
+                                class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                                type="submit">Enviar</button>
+                        </div>
+
+                    </form>
+		 
+            </div>
+       
+ 
+            <form action="submit" id="passwordForm"
+            class="flex flex-col cm bg-slate-700 text-white p-6 rounded-lg mb-6 mx-test2 c-[10px_10px_25px_2px_rgba(30,41,59,0.7)] w-fit h-fit"> 
+                        <label class="text-slate-400 font-bold mb-1 md:mb-0 pr-4" for="inline-password" > 
+                            Nueva contraseña...
+                        </label>
+            <div class="md:w-2/3" id="password-input">   
+                             
+                <input
+                            class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                            id="inline-password" type="password" name="Password" placeholder="Contraseña">
+                            <p> <br></p>
+                        </div> 
+                        
+                    <div> 
+                    <label class="text-slate-400 font-bold mb-1 md:mb-0 pr-4" for="inline-password2">
+                            Repetir contraseña...
+                    </label>
+                
+                <div class="md:w-2/3" id="password2-input">
+                    <input
+                            class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                            id="inline-password2" type="password" name="Password2" placeholder="Contraseña">
+                        <p> <br></p>
+                    </div> 
+                        <div class="flex justify-left">
+                        <button 
+                        class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                        type="submit">modificar</button>
+                        </div>
+                </div>
+           
+            </form> --> 
+
+<!--
+
+   <div class="flex justify-center ">
+    <div id="past-predictions"
+        class="flex flex-col bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit">
+<label class="text-slate-400 font-bold mb-1 md:mb-0 pr-4" >
+                Ver resultados...
+            </label>
+    <div class="flex justify-left">
+<button id="getResults" 
+                class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                type="submit">Resultados</button>    
+    </div>
+    <p> <br></p>
+                    <p>Éste botón se habilitará<br>luego de la fecha de cierre<br>
+                        y una vez publicado el IPC<br>en la pagina del INDEC<br>
+                        aprox. a partir del dia 12<br>la variacion con respecto<br>
+                        al mes anterior.</p>
+                    
+</div> 
+</div>   
+
+                <div class="flex justify-center">
+                    <div id="past-predictions"
+                        class="flex flex-col bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit">
+                        <h2 class="mb-2 text-xl"><span class="underline">Tus últimas predicciones</span>:</h2>
+                        <p> <br></p>
+                        
+                        <script type="text/javascript">
+
+            var text = "<table>"+
+                        "<thead>"+
+                            "<tr>"+
+                                "<th class=\"underline\"<p align=\"left\">Fecha:</p></th>"+
+                                "<th class=\"underline\"<p align=\"left\">Prediccion:</p></th>"+
+                            "</tr>"+
+                        "</thead>"
+	         
+			const data = getCookie("historico") 
+
+	    		let vector = data.split(",")
+                              
+				for (let i = 0; i < vector.length - 1 ; i=i+2) {
+                             			                                                                                                                                                           
+			text += "<tbody>"+
+                            "<tr>"+
+                                "<td class=\"text-left\">" + vector[i] + "</td>"+
+                                "<td class=\"text-center\">"+ vector[i+1] + "</td>" +
+                            "</tr>"                      
+				}
+
+			text += "</tbody>" +
+				"</table>"
+
+			document.write(text)
+
+                      	</script>
+
+                    </div>
+                </div>
+
+            -->
+
+
+            </div>
+ </div>  
+       </div>  
+<br><br><br><br>
+        
+    </main>
+
+    </div>
+
+    <footer>
+
+    </footer>
+ 	       <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>      
+	       <script src="./js/predictions.js"></script>
+	       <!-- <script src="./js/results.js"></script> -->
+	       <!-- <script src="./js/password.js"></script>     -->
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+INSERT INTO preventores (nombre) VALUES ('ALF PISTAN');
+INSERT INTO preventores (nombre) VALUES ('SARG AVALOS');
+INSERT INTO preventores (nombre) VALUES ('CRO REVOLERO');
+INSERT INTO preventores (nombre) VALUES ('CBO CUSSI');
+INSERT INTO preventores (nombre) VALUES ('CBO SALTOS');
+INSERT INTO preventores (nombre) VALUES ('ALF CARBALLO');
+INSERT INTO preventores (nombre) VALUES ('CBO FARFAN ');
+INSERT INTO preventores (nombre) VALUES ('1ER ALF ARILLA');
+INSERT INTO preventores (nombre) VALUES ('1ER ALF BASILOFF');
+INSERT INTO preventores (nombre) VALUES ('1ER ALF CARBALLO');
+INSERT INTO preventores (nombre) VALUES ('1ER ALF KESS');
+INSERT INTO preventores (nombre) VALUES ('1ER ALF RODRIGUEZ');
+INSERT INTO preventores (nombre) VALUES ('2DO CTE GOMEZ');
+INSERT INTO preventores (nombre) VALUES ('ALF BARRIOS');
+INSERT INTO preventores (nombre) VALUES ('ALF GOMEZ');
+INSERT INTO preventores (nombre) VALUES ('ALF PONA');
+INSERT INTO preventores (nombre) VALUES ('ALF ZOPLAS');
+INSERT INTO preventores (nombre) VALUES ('CBO 1RO MORENO');
+INSERT INTO preventores (nombre) VALUES ('CBO ALTAMIRANO');
+INSERT INTO preventores (nombre) VALUES ('CBO AYUDARTE');
+INSERT INTO preventores (nombre) VALUES ('CBO CARBALLO');
+INSERT INTO preventores (nombre) VALUES ('CBO CENTURION MAURICIO');
+INSERT INTO preventores (nombre) VALUES ('CBO ENCISO');
+INSERT INTO preventores (nombre) VALUES ('CBO ESPINDOLA');
+INSERT INTO preventores (nombre) VALUES ('CBO FARFAN');
+INSERT INTO preventores (nombre) VALUES ('CBO MEDINA');
+INSERT INTO preventores (nombre) VALUES ('CBO 1RO MORENO');
+INSERT INTO preventores (nombre) VALUES ('CBO PAREDES');
+INSERT INTO preventores (nombre) VALUES ('CBO PEREIRA');
+INSERT INTO preventores (nombre) VALUES ('CBO ROMERO');
+INSERT INTO preventores (nombre) VALUES ('CBO CABAÑA');
+INSERT INTO preventores (nombre) VALUES ('CBO GONZALEZ');
+INSERT INTO preventores (nombre) VALUES ('CRO GONZALEZ');
+INSERT INTO preventores (nombre) VALUES ('CBO LOPEZ');
+INSERT INTO preventores (nombre) VALUES ('CRO MARTINEZ');
+INSERT INTO preventores (nombre) VALUES ('CRO VILLAFAÑE');
+INSERT INTO preventores (nombre) VALUES ('SGTO CHAVEZ');
+INSERT INTO preventores (nombre) VALUES ('SGTO AVALOS');
+INSERT INTO preventores (nombre) VALUES ('SGTO BALCARCE');
+INSERT INTO preventores (nombre) VALUES ('SGTO FLORES');
+INSERT INTO preventores (nombre) VALUES ('SGTO RIOS');
+INSERT INTO preventores (nombre) VALUES ('SGTO VILLARREAL');
+
+
+

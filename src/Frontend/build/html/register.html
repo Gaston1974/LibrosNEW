@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./ratchet-2.0.2/dist/css/ratchet.css">
+    <link rel="stylesheet" href="./ratchet-2.0.2/dist/css/ratchet-theme-ios.css">
+    <script src="./ratchet-2.0.2/dist/js/ratchet.js"></script> 
+
+    <title>Interisleña</title>
+</head>
+
+<body class="bg-slate-300 font-montagu">
+
+    <div class="content">
+        <nav class="bar bar-tab">
+            <a class="tab-item active back" href="./index">
+    
+              <span class="icon icon-home"></span>
+              <span class="tab-label">Home</span>
+            </a>
+
+    
+        </nav>  
+
+    <main>
+        <div class="flex flex-col bg-sky-600 bg-interislenia items-center py-8 shadow-[0_10px_25px_2px_rgba(30,41,59,0.7)]">
+            
+            <img src="./img/flag.png" alt="Flag" class="w-40">
+            <p class="mt-5 text-sm-color-inter font-bold "  align="center">I N T E R I S L E Ñ A</p>
+        </div>
+        <div class="container mx-auto mt-8">
+
+                    <div id="login"
+                        class="mx-auto w-fit flex flex-col text-slate-800 bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit">
+                        <h2 class="mx-test6 mb-2 text-lg"><span class="underline">Registro</span>:</h2>
+                        <form action="submit" id="registerForm" class="w-full max-w-ind mb-2">
+                            <div class="md:flex md:items-center mx-test7 mb-6">
+                               
+                                    <label class="text-xl block text-slate-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                        for="inline-nombre">
+                                        Nombre
+                                    </label>
+                                
+                                <div id="nombre-input">
+                                    <input
+                                        class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 pr-5 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                        id="inline-nombre" type="text" name="Nombre">
+                                </div>
+                            </div>
+
+                            <div class="md:flex md:items-center mx-test8 mb-6">
+                                
+                                    <label class="text-xl block text-slate-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                        for="inline-apellido">
+                                        Apellido
+                                    </label>
+                               
+                                <div id="apellido-input">
+                                    <input
+                                        class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 pr-5 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                        id="inline-apellido" type="text" name="Apellido">
+                                </div>
+                            </div>
+
+                            <div class="md:flex md:items-center mx-test10 mb-6">
+                               
+                                    <label class="text-xl block text-slate-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                        for="inline-password">
+                                        Contraseña
+                                    </label>
+                              
+                                <div id="password-input">
+                                    <input
+                                        class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 pr-5 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                        id="inline-password" type="password" name="Password">
+                                </div>
+                            </div>
+
+                            <div class="md:flex md:items-center mx-test9 mb-6">
+                                
+                                    <label class="text-xl block text-slate-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                        for="inline-password2">
+                                        Repetir
+                                    </label>
+                               
+                                <div id="password2-input">
+                                    <input
+                                        class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 pr-5 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                        id="inline-password2" type="password" name="Password2">
+                                </div>
+                            </div>
+
+                            <div class="flex justify-center mb-3">
+                                <button
+                                    class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                                    type="submit">Registrarse</button>
+                            </div>
+
+                        </form>
+                      
+                        
+                    </div>
+                    
+    
+        </div>
+        <br><br><br><br>
+    
+    </main>
+
+</div>
+
+    <footer>
+
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

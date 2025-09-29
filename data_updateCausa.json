@@ -1,0 +1,22 @@
+{
+		  "Id": "263",
+                  "Nro_causa": "FSM 35575/23",
+                  "Caratula": "test",
+                  "Fiscalia_id": "99999",
+		  "Juzgado_id": "8", 
+                  "Magistrado": "",
+                  "Preventor": "SGTO VILLAREAL",
+                  "Preventor_auxiliar": "CBO FARFAN",
+                  "Provincia_id": "1",
+                  "Localidad_id": "1",
+                  "Domicilio": "",
+                  "Nro_sgo": "PREVENTIVO 28",
+                  "Nro_mto": "EMAIL",
+                  "Tipo_delito": "CAUSA",
+                  "Nombre_fantasia": "CUMPLE",
+                  "Fecha": "2025-05-09",
+                  "Providencia": "",
+		  "Estado": "activa",
+		  "IpAdress": "",
+		  "Descripcion": "Se modifica la caratula. Anterior: FALSIFICACION "
+}

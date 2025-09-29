@@ -1,0 +1,26 @@
+{
+                  "Nro_causa": "SAC 12741155",
+                  "Caratula": "NN S/ ESTAFA POROZCO",
+                  "Juzgado": "JUZGADO NACIONAL EN LO CORRECCIONAL FEDERAL NUMERO 3, SEC 5",
+                  "Fiscalia": "",
+                  "Magistrado": "",
+                  "Preventor": "SARG VILLAREAL",
+                  "Preventor_auxiliar": "CBO FARFAN",
+                  "Provincia_id": "1",
+                  "Localidad_id": "1",
+                  "Domicilio": "1",
+                  "Nro_sgo": "4074529",
+                  "Nro_mto": "EMAIL",
+                  "Tipo_delito": "CAUSA",
+                  "Nombre_fantasia": "OROZCO",
+                  "Fecha": "02/11/2025",
+                  "Providencia": "",
+		  "Estado": "",
+		  "Nombre_archivo": "documento",
+		  "Ruta_archivo": "/ruta/de/prueba/",
+		  "Tipo_documento": "txt",
+		  "Tamano": "5",
+		  "Nota_causa": "se encontro evidencia importante en el celular codigo dddd"
+}
+
+
